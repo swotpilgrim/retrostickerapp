@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Framework Browser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1 class="header-title">Sticker Framework Browser</h1>
+            <div class="controls">
+                <div class="theme-buttons">
+                    <button id="vintage-btn" class="theme-btn active">Vintage Americana</button>
+                    <button id="retro-btn" class="theme-btn">Retro-Futurism</button>
+                    <button id="gothic-btn" class="theme-btn">Campy Gothic</button>
+                </div>
+                <div class="mode-toggle">
+                    <button id="content-btn" class="mode-btn active">Content Mode</button>
+                    <button id="character-btn" class="mode-btn">Character Mode</button>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn">Toggle Dark/Light</button>
+                </div>
+            </div>
+        </header>
+        
+        <div class="content-browser">
+            <div id="column1" class="column">
+                <div class="column-title">CATEGORY 1</div>
+                <!-- Column 1 content will be loaded here -->
+            </div>
+            
+            <div id="column2" class="column">
+                <div class="column-title">CATEGORY 2</div>
+                <!-- Column 2 content will be loaded here -->
+            </div>
+            
+            <div id="column3" class="column">
+                <div class="column-title">CATEGORY 3</div>
+                <!-- Column 3 content will be loaded here -->
+            </div>
+            
+            <div id="column4" class="column">
+                <div class="column-title">CONTENT</div>
+                <!-- Column 4 content will be loaded here -->
+            </div>
+        </div>
+        
+        <footer>
+            <p>Sticker Framework Browser - Created for browsing and organizing sticker content themes</p>
+        </footer>
+    </div>
+
+<!-- Content data -->
+<script src="data/contentCol1.js"></script>
+<script src="data/contentCol2.js"></script>
+<script src="data/contentCol3.js"></script>
+<script src="data/contentCol4Vintage.js"></script>
+<script src="data/contentCol4Retro.js"></script>
+<script src="data/contentCol4Gothic.js"></script>
+
+<!-- Character data -->
+<script src="data/characterCol1.js"></script>
+<script src="data/characterCol2.js"></script>
+<script src="data/characterCol3.js"></script>
+<script src="data/characterCol4Vintage.js"></script>
+<script src="data/characterCol4Retro.js"></script>
+<script src="data/characterCol4Gothic.js"></script>
+    
+    <!-- Main app script -->
+    <script src="app.js"></script>
+</body>
+</html>
